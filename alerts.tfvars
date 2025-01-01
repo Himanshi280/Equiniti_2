@@ -284,7 +284,7 @@ nrql_alert_condition_details_mssql_rules = {
   #   aggregation_method            = "event_flow"
   #   aggregation_delay             = 120
   #   baseline_direction            = "upper_only"
-  #   query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID= AND  message LIKE '%error%'FACET message,hostname"
+  #   query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID= AND  message LIKE '%error%'FACEThostname"
   #   warning                       = true
   #   critical                      = false
   #   warning_operator              = "above_or_equals"
@@ -304,7 +304,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=20554 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=20554 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -325,7 +325,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9642 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9642 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -346,7 +346,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9645 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9645 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -367,7 +367,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8405 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8405 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -388,7 +388,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9644 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9644 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -409,7 +409,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=28072 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=28072 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -430,7 +430,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9643 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9643 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -451,7 +451,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9646 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9646 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -472,7 +472,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9789 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9789 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -493,7 +493,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9004 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9004 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -514,7 +514,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9736 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9736 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -535,7 +535,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6291 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6291 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -556,7 +556,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9649 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9649 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -577,7 +577,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9761 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9761 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -598,7 +598,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9641 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9641 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -619,7 +619,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=605 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=605 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -640,7 +640,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=17179 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=17179 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -661,7 +661,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=18204 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=18204 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -682,7 +682,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9002 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9002 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -703,7 +703,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=1619 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=1619 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -724,7 +724,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=5123 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=5123 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -745,7 +745,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9701 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9701 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -766,7 +766,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9694 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9694 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -787,7 +787,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=28002 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=28002 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -808,7 +808,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9698 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9698 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -829,7 +829,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9697 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9697 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -850,7 +850,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8921 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8921 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -871,7 +871,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=832 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=832 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -892,7 +892,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6805 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6805 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -913,7 +913,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6510 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6510 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -934,7 +934,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=21286 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=21286 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -955,7 +955,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=1803 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=1803 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -976,7 +976,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=1105 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=1105 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -997,7 +997,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=10303 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=10303 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1018,7 +1018,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=17204 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=17204 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1039,7 +1039,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=17058 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=17058 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1060,7 +1060,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=5180 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=5180 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1081,7 +1081,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8966 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8966 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1102,7 +1102,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=3431 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=3431 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1123,7 +1123,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=3619 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=3619 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1144,7 +1144,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=5123 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=5123 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1165,7 +1165,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=3414 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=3414 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1186,7 +1186,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID =8957 AND  message LIKE '%error% ' AND  message LIKE '%Database consistency errors found and repaired%' FACET message, hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID =8957 AND  message LIKE '%error% ' AND  message LIKE '%Database consistency errors found and repaired%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1207,7 +1207,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID =8957 AND  message LIKE '%error% ' AND  message LIKE '%Database consistency errors found%' FACET message, hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID =8957 AND  message LIKE '%error% ' AND  message LIKE '%Database consistency errors found%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1228,7 +1228,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=3413 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=3413 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1249,7 +1249,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=617 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=617 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1270,7 +1270,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6610 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6610 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1291,7 +1291,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6608 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6608 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1312,7 +1312,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=3417 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=3417 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1333,7 +1333,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=21285 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=21285 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1354,7 +1354,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6289 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6289 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1375,7 +1375,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6517 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6517 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1396,7 +1396,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=21284 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=21284 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1417,7 +1417,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6513 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6513 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1438,7 +1438,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6511 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6511 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1459,7 +1459,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6512 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6512 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1480,7 +1480,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=7622 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=7622 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1501,7 +1501,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=7607 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=7607 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1522,7 +1522,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8630 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8630 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1543,7 +1543,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8680 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8680 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1564,7 +1564,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8621 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8621 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1585,7 +1585,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=7105 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=7105 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1606,7 +1606,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=824 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=824 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1627,7 +1627,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=4064 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=4064 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1648,7 +1648,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6536 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6536 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1669,7 +1669,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6537 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6537 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1690,7 +1690,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=654 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=654 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1711,7 +1711,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8956 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8956 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1732,7 +1732,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=17207 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=17207 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1753,7 +1753,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=17218 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=17218 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1774,7 +1774,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=823 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=823 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1795,7 +1795,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8982 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8982 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1816,7 +1816,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=17884 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=17884 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1837,7 +1837,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9634 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9634 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1858,7 +1858,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=3151 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=3151 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1879,7 +1879,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8941 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8941 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1900,7 +1900,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=1101 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=1101 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1921,7 +1921,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9696 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9696 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1942,7 +1942,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9695 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9695 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1963,7 +1963,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=701 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=701 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -1984,7 +1984,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=28078 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=28078 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2005,7 +2005,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=28076 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=28076 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2026,7 +2026,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9650 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9650 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2047,7 +2047,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=28060 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=28060 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2068,7 +2068,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8946 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8946 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2089,7 +2089,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8936 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8936 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2110,7 +2110,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8931 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8931 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2131,7 +2131,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8937 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8937 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2152,7 +2152,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8930 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8930 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2173,7 +2173,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8925 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8925 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2194,7 +2194,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8926 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8926 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2215,7 +2215,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8969 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8969 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2236,7 +2236,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8963 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8963 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2257,7 +2257,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8938 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8938 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2278,7 +2278,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=15013 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=15013 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2299,7 +2299,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=14265 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=14265 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2320,7 +2320,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=10001 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=10001 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2341,7 +2341,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=3627 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=3627 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2362,7 +2362,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9692 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9692 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2383,7 +2383,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9693 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=9693 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2404,7 +2404,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=18459 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=18459 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2425,7 +2425,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8908 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8908 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2446,7 +2446,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=5120 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=5120 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2467,7 +2467,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=16959 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=16959 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2488,7 +2488,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=15601 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=15601 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2509,7 +2509,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6627 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6627 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2530,7 +2530,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6603 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=6603 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2551,7 +2551,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=4221 AND message LIKE '%error%' FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=4221 AND message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2572,7 +2572,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=3041 AND  message LIKE '%error%' AND  message LIKE '%Log Backup Failed to Complete%'FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=3041 AND  message LIKE '%error%' AND  message LIKE '%Log Backup Failed to Complete%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2593,7 +2593,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=3041 AND  message LIKE '%error%'FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=3041 AND  message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2614,7 +2614,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8620 AND  message LIKE '%error%'FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8620 AND  message LIKE '%error%' FACET hostname"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -2635,7 +2635,7 @@ nrql_alert_condition_details_mssql_rules = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8670 AND  message LIKE '%error%'FACET message,hostname"
+    query                         = "FROM Log SELECT uniqueCount(message) WHERE EventID=8670 AND  message LIKE '%error%' FACET hostName"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
