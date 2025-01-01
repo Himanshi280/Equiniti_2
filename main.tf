@@ -233,7 +233,7 @@ resource "newrelic_one_dashboard" "mssql" {
 
     widget_table {
       title  = "Summary - DB State Not Online"
-      row    = 3
+      row    = 2
       column = 1
       width  = 12
       height = 3
@@ -245,7 +245,7 @@ resource "newrelic_one_dashboard" "mssql" {
 
     widget_table {
       title  = "Summary - DB State Online"
-      row    = 2
+      row    = 3
       column = 1
       width  = 12
       height = 3
@@ -318,34 +318,6 @@ resource "newrelic_one_dashboard" "mssql" {
 
   }
 
-  page {
-    name = "SQL Event Logs"
-
-    widget_table {
-      title  = "SQL Event 17063"
-      row    = 1
-      column = 1
-      width  = 12
-      height = 3
-
-      nrql_query {
-        query = "SELECT `Channel`,`EventID`,`ComputerName`,`message` FROM Log WHERE (`EventID` = 17063 OR `EventID` = '17063') AND message like '% x %' SINCE 7 days ago LIMIT 50"
-      }
-    }
-
-    widget_table {
-      title  = "SQL Event 17063"
-      row    = 2
-      column = 1
-      width  = 12
-      height = 4
-
-      nrql_query {
-        query = "FROM Log SELECT timestamp, EventID, message, hostname WHERE EventID IN (3041, 20554, 9642, 9645, 8405, 9644, 28072, 9643, 9646, 9789, 9004, 9736, 6291, 9649, 9761, 9641, 605, 17179, 18204, 9002, 1619, 5123, 9701, 9694, 28002, 9698, 9697, 8921, 832, 6805, 6510, 21286, 1803, 1105, 10303, 17204, 17058, 5180, 8966, 3431, 3619, 5123, 3414, 8957, 3413, 617, 6610, 6608, 3417, 21285, 6289, 6517, 21284, 6513, 6511, 6512, 7622, 7607, 8620, 8670, 8630, 8680, 8621, 7105, 824, 4064, 6536, 6537, 654, 8956, 17207, 17218, 823, 8982, 17884, 9634, 3151, 8941, 1101, 9696, 9695, 701, 28078, 28076, 9650, 28060, 8946, 8936, 8931, 8937, 8930, 8925, 8926, 8969, 8963, 8938, 15013, 14265, 10001, 3627, 9692, 9693, 18459, 8908, 5120, 16959, 15601, 6627, 6603, 4221) AND EventID IS NOT NULL"
-      }
-    }
-
-  }
 
   page {
     name = "Server Reboot & Account locked Event"
@@ -471,6 +443,35 @@ resource "newrelic_one_dashboard" "mssql" {
     #     height = 3
     #     text   = " ![New Relic logo](https://newrelic.com/static-assets/images/icons/avatar-newrelic.png)"
     # }
+  }
+
+  page {
+    name = "SQL Event Logs"
+
+    widget_table {
+      title  = "SQL Event 17063"
+      row    = 1
+      column = 1
+      width  = 12
+      height = 3
+
+      nrql_query {
+        query = "SELECT `Channel`,`EventID`,`ComputerName`,`message` FROM Log WHERE (`EventID` = 17063 OR `EventID` = '17063') AND message like '% x %' SINCE 7 days ago LIMIT 50"
+      }
+    }
+
+    widget_table {
+      title  = "Rules Monitor Events"
+      row    = 2
+      column = 1
+      width  = 12
+      height = 4
+
+      nrql_query {
+        query = "FROM Log SELECT timestamp, EventID, message, hostname WHERE EventID IN (3041, 20554, 9642, 9645, 8405, 9644, 28072, 9643, 9646, 9789, 9004, 9736, 6291, 9649, 9761, 9641, 605, 17179, 18204, 9002, 1619, 5123, 9701, 9694, 28002, 9698, 9697, 8921, 832, 6805, 6510, 21286, 1803, 1105, 10303, 17204, 17058, 5180, 8966, 3431, 3619, 5123, 3414, 8957, 3413, 617, 6610, 6608, 3417, 21285, 6289, 6517, 21284, 6513, 6511, 6512, 7622, 7607, 8620, 8670, 8630, 8680, 8621, 7105, 824, 4064, 6536, 6537, 654, 8956, 17207, 17218, 823, 8982, 17884, 9634, 3151, 8941, 1101, 9696, 9695, 701, 28078, 28076, 9650, 28060, 8946, 8936, 8931, 8937, 8930, 8925, 8926, 8969, 8963, 8938, 15013, 14265, 10001, 3627, 9692, 9693, 18459, 8908, 5120, 16959, 15601, 6627, 6603, 4221) AND EventID IS NOT NULL"
+      }
+    }
+
   }
 
 }
