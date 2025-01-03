@@ -44,11 +44,23 @@ resource "newrelic_one_dashboard" "mssql" {
       }
     }
 
-    widget_table {
-      title  = "Instance Average Wait time By Type"
+    widget_area {
+      title  = "Average Wait Type Max. By Instance Type"
       row    = 1
       column = 4
       width  = 9
+      height = 3
+
+      nrql_query {
+        query = "SELECT  max(AverageWaitTimeMs) FROM MssqlCustomQuerySample WHERE label.query = 'avgwait' WHERE environment IN ({{Environment}}) AND instance IN ({{Instance}}) TIMESERIES  FACET wait_type,instance"
+      }
+    }
+
+    widget_table {
+      title  = "Instance Average Wait time By Type"
+      row    = 9
+      column = 1
+      width  = 12
       height = 3
 
       nrql_query {
