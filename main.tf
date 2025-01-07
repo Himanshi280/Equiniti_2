@@ -447,14 +447,14 @@ resource "newrelic_one_dashboard" "mssql" {
         query = "FROM MssqlCustomQuerySample SELECT AvailabilityGroup,AvailabilityMode,FailoverMode WHERE label.query='agafc' WHERE environment IN ({{environment}}) AND instance IN ({{Instance}})"
       }
     }
-    # widget_markdown {
-    #     title  = ""
-    #     row    = 3
-    #     column = 1
-    #     width  = 3
-    #     height = 3
-    #     text   = " ![New Relic logo](https://newrelic.com/static-assets/images/icons/avatar-newrelic.png)"
-    # }
+    widget_markdown {
+        title  = ""
+        row    = 3
+        column = 1
+        width  = 3
+        height = 3
+        text   = "![New Relic logo](data:image/png;base64,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)"
+    }
   }
 
   page {
