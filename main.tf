@@ -245,7 +245,7 @@ resource "newrelic_one_dashboard" "mssql" {
 
     widget_table {
       title  = "Summary - DB State Not Online"
-      row    = 2
+      row    = 5
       column = 1
       width  = 12
       height = 3
@@ -257,7 +257,7 @@ resource "newrelic_one_dashboard" "mssql" {
 
     widget_table {
       title  = "Summary - DB State Online"
-      row    = 3
+      row    = 6
       column = 1
       width  = 12
       height = 3
@@ -318,13 +318,61 @@ resource "newrelic_one_dashboard" "mssql" {
 
     widget_billboard {
       title  = "DB Log Backup Status"
-      row    = 4
+      row    = 2
       column = 1
-      width  = 3
+      width  = 4
       height = 3
 
       nrql_query {
         query = "FROM MssqlCustomQuerySample SELECT latest(LogBackupStatus) WHERE label.query='logbackup' AND environment IN ({{environment}}) AND instance IN ({{Instance}}) FACET DatabaseName"
+      }
+    }
+
+    widget_billboard {
+      title  = "DB engine health status"
+      row    = 2
+      column = 5
+      width  = 4
+      height = 3
+
+      nrql_query {
+        query = "select latest(DBEngineHealthStatus) from MssqlCustomQuerySample WHERE label.query ='dbengine' and environment IN (Environment) and instance IN (Instance) facet instance"
+      }
+    }
+
+    widget_billboard {
+      title  = "DB backup Status"
+      row    = 2
+      column = 9
+      width  = 4
+      height = 3
+
+      nrql_query {
+        query = "FROM MssqlCustomQuerySample SELECT latest(BackupStatus) WHERE label.query='dbbackup' and environment IN (Environment) and instance IN (Instance) FACET instance"
+      }
+    }
+
+    widget_table {
+      title  = "DB engine Health Summary"
+      row    = 3
+      column = 1
+      width  = 12
+      height = 3
+
+      nrql_query {
+        query = "select StartTime,DBEngineHealthStatus from MssqlCustomQuerySample WHERE label.query ='dbengine' and environment IN (Environment) and instance IN (Instance)"
+      }
+    }
+
+    widget_table {
+      title  = "DB Backup Summary"
+      row    = 4
+      column = 1
+      width  = 12
+      height = 3
+
+      nrql_query {
+        query = "FROM MssqlCustomQuerySample SELECT DatabaseName,BackupStatus WHERE label.query='dbbackup' and environment IN (Environment) and instance IN (Instance)"
       }
     }
 
