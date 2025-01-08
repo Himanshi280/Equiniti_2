@@ -312,7 +312,7 @@ resource "newrelic_one_dashboard" "mssql" {
 
       nrql_query {
         # query = "from MssqlCustomQuerySample select * where label.query ='newdb' AND environment IN ({{Environment}}) AND instance IN ({{ Instance}}) since 5 weeks ago Limit Max"
-        query = "From MssqlCustomQuerySample select count(*) AS 'New DB Created' where label.query = 'newdb' and environment IN (Environment) and instance IN (Instance) SINCE 1 year ago LIMIT MAX"
+        query = "From MssqlCustomQuerySample select count(*) AS 'New DB Created' where label.query = 'newdb' AND environment IN ({{Environment}}) AND instance IN ({{Instance}}) SINCE 1 year ago LIMIT MAX"
       }
     }
 
@@ -336,7 +336,7 @@ resource "newrelic_one_dashboard" "mssql" {
       height = 3
 
       nrql_query {
-        query = "select latest(DBEngineHealthStatus) from MssqlCustomQuerySample WHERE label.query ='dbengine' and environment IN (Environment) and instance IN (Instance) facet instance"
+        query = "select latest(DBEngineHealthStatus) from MssqlCustomQuerySample WHERE label.query ='dbengine' AND environment IN ({{Environment}}) AND instance IN ({{Instance}}) facet instance"
       }
     }
 
@@ -348,7 +348,7 @@ resource "newrelic_one_dashboard" "mssql" {
       height = 3
 
       nrql_query {
-        query = "FROM MssqlCustomQuerySample SELECT latest(BackupStatus) WHERE label.query='dbbackup' and environment IN (Environment) and instance IN (Instance) FACET instance"
+        query = "FROM MssqlCustomQuerySample SELECT latest(BackupStatus) WHERE label.query='dbbackup' AND environment IN ({{Environment}}) AND instance IN ({{Instance}}) FACET instance"
       }
     }
 
@@ -360,7 +360,7 @@ resource "newrelic_one_dashboard" "mssql" {
       height = 3
 
       nrql_query {
-        query = "select StartTime,DBEngineHealthStatus from MssqlCustomQuerySample WHERE label.query ='dbengine' and environment IN (Environment) and instance IN (Instance)"
+        query = "select StartTime,DBEngineHealthStatus from MssqlCustomQuerySample WHERE label.query ='dbengine' AND environment IN ({{Environment}}) AND instance IN ({{Instance}})"
       }
     }
 
@@ -372,7 +372,7 @@ resource "newrelic_one_dashboard" "mssql" {
       height = 3
 
       nrql_query {
-        query = "FROM MssqlCustomQuerySample SELECT DatabaseName,BackupStatus WHERE label.query='dbbackup' and environment IN (Environment) and instance IN (Instance)"
+        query = "FROM MssqlCustomQuerySample SELECT DatabaseName,BackupStatus WHERE label.query='dbbackup' AND environment IN ({{Environment}}) AND instance IN ({{Instance}})"
       }
     }
 

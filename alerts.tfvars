@@ -115,7 +115,7 @@ nrql_alert_condition_details_mssql = {
     aggregation_method            = "event_flow"
     aggregation_delay             = 120
     baseline_direction            = "upper_only"
-    query                         = "FROM MssqlCustomQuerySample SELECT uniqueCount(LogBackupStatus) WHERE LogBackupStatus LIKE '%Log Backup Outdated%'  FACET LogBackupStatus,instance,hostname,DatabaseName"
+    query                         = "FROM MssqlCustomQuerySample SELECT uniqueCount(LogBackupStatus) WHERE LogBackupStatus LIKE '%Log Backup Outdated%' AND label.query=logbackup FACET LogBackupStatus,instance,hostname,DatabaseName"
     warning                       = true
     critical                      = false
     warning_operator              = "above_or_equals"
@@ -135,7 +135,7 @@ nrql_alert_condition_details_mssql = {
     aggregation_method              = "event_flow"
     aggregation_delay               = 120
     baseline_direction              = "upper_only"
-    query                           = "FROM MssqlCustomQuerySample SELECT uniqueCount(LogBackupStatus) WHERE LogBackupStatus LIKE '%No Log Backup%' FACET LogBackupStatus,instance,hostname,DatabaseName "
+    query                           = "FROM MssqlCustomQuerySample SELECT uniqueCount(LogBackupStatus) WHERE LogBackupStatus LIKE '%No Log Backup%' AND label.query=logbackup FACET LogBackupStatus,instance,hostname,DatabaseName "
     warning                         = false
     critical                        = true
     critical_operator               = "above_or_equals"
@@ -2622,5 +2622,69 @@ nrql_alert_condition_details_mssql_rules = {
     warning_threshold_duration    = 300
     warning_threshold_occurrences = "all"
 }
+
+"112" = {
+    type                          = "static"
+    account_id                    = 4411834
+    name                          = "Databse backup status"
+    description                   = ""
+    runbook_url                   = "https://www.example.com"
+    enabled                       = false
+    violation_time_limit_seconds  = 3600
+    aggregation_window            = 300
+    aggregation_method            = "event_flow"
+    aggregation_delay             = 120
+    baseline_direction            = "upper_only"
+    query                         = "FROM MssqlCustomQuerySample SELECT uniqueCount(BackupStatus) WHERE label.query='dbbackup' AND BackupStatus LIKE '%Backup outdated%' FACET  LogBackupStatus,instance,hostname,DatabaseName"
+    warning                       = true
+    critical                      = false
+    warning_operator              = "above_or_equals"
+    warning_threshold             = 1
+    warning_threshold_duration    = 300
+    warning_threshold_occurrences = "all"
+}
+
+"113" = {
+    type                            = "static"
+    account_id                      = 4411834
+    name                            = "Database backup status"
+    description                     = ""
+    runbook_url                     = "https://www.example.com"
+    enabled                         = false
+    violation_time_limit_seconds    = 3600
+    aggregation_window              = 300
+    aggregation_method              = "event_flow"
+    aggregation_delay               = 120
+    baseline_direction              = "upper_only"
+    query                           = "FROM MssqlCustomQuerySample SELECT Count(BackupStatus) WHERE BackupStatus LIKE '%No Backup%' AND instance LIKE '%prd%' AND label.query='dbbackup' FACET  LogBackupStatus,instance,hostname,DatabaseName"
+    warning                         = false
+    critical                        = true
+    critical_operator               = "above_or_equals"
+    critical_threshold              = 1
+    critical_threshold_duration     = 300
+    critical_threshold_occurrences = "all"
+  }
+
+"114" = {
+    type                            = "static"
+    account_id                      = 4411834
+    name                            = "DB engine health status"
+    description                     = ""
+    runbook_url                     = "https://www.example.com"
+    enabled                         = false
+    violation_time_limit_seconds    = 3600
+    aggregation_window              = 300
+    aggregation_method              = "event_flow"
+    aggregation_delay               = 120
+    baseline_direction              = "upper_only"
+    query                           = "FROM MssqlCustomQuerySample SELECT  Count(DBEngineHealthStatus) WHERE label.query='dbengine' WHERE DBEngineHealthStatus!='Healthy'FACET instance,StartTime,hostname"
+    warning                         = false
+    critical                        = true
+    critical_operator               = "above_or_equals"
+    critical_threshold              = 1
+    critical_threshold_duration     = 300
+    critical_threshold_occurrences = "all"
+  }
+
 
 }
